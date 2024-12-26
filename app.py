@@ -199,9 +199,9 @@ if all(person_df.iloc[0].dropna().values != ''):
 #
 
     st.title(":tada: Świetnie! Znalazłeś swoją grupę, która jest do Ciebie dopasowana :tada:")
-
+    
     if st.button(f"Wejdź na grupę {predicted_cluster_data['name']} i poznaj pozostałych członków"):
-        webbrowser.open("https://youtu.be/dQw4w9WgXcQ?si=PUhLQ2n0NRS8MZE6")
+        st.video("https://youtu.be/dQw4w9WgXcQ?si=PUhLQ2n0NRS8MZE6")
         time.sleep(1)
         st.toast("Never gonna give you up")
         time.sleep(1)
