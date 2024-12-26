@@ -1201,3 +1201,1135 @@ dtype: int64}]))),
                                                               use_cat_names=True))),
                 ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
 2024-12-26 15:14:35,275:INFO:Set up data.
+2024-12-26 17:04:44,277:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:04:44,277:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:04:44,277:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:04:44,277:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:15:30,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:15:30,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:15:30,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:15:30,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:29:19,882:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:29:19,882:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:29:19,882:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:29:19,882:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-26 17:30:56,307:INFO:Initializing load_model()
+2024-12-26 17:30:56,307:INFO:load_model(model_name=welcome_survey_clustering_pipeline_v2, platform=None, authentication=None, verbose=True)
+2024-12-26 17:30:56,388:WARNING:C:\Users\LEGION\miniconda3\envs\ai_group_matcher\Lib\site-packages\pycaret\internal\pipeline.py:146: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.2', 'setuptools': '75.1.0', 'pycaret': '3.3.1', 'IPython': '8.31.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.13.0', 'category_encoders': '2.6.4', 'lightgbm': '4.4.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.9.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '6.1.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '24.2', 'setuptools': '75.1.0', 'pycaret': '3.3.1', 'IPython': '8.27.0', 'ipywidgets': '7.8.1', 'tqdm': '4.67.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.13.0', 'category_encoders': '2.6.4', 'lightgbm': '4.4.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.8.4', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.10', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2024-12-26 17:30:56,423:INFO:Initializing predict_model()
+2024-12-26 17:30:56,423:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BEED8FE50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:30:56,423:INFO:Set up data.
+2024-12-26 17:30:56,725:INFO:Initializing predict_model()
+2024-12-26 17:30:56,725:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF0080510>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:30:56,725:INFO:Set up data.
+2024-12-26 17:34:22,551:INFO:Initializing predict_model()
+2024-12-26 17:34:22,551:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BEEA21AD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:34:22,551:INFO:Set up data.
+2024-12-26 17:34:42,200:INFO:Initializing predict_model()
+2024-12-26 17:34:42,201:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF03F5E50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:34:42,201:INFO:Set up data.
+2024-12-26 17:34:53,396:INFO:Initializing predict_model()
+2024-12-26 17:34:53,396:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BEE973A50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:34:53,396:INFO:Set up data.
+2024-12-26 17:34:56,700:INFO:Initializing predict_model()
+2024-12-26 17:34:56,700:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF2466A90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:34:56,701:INFO:Set up data.
+2024-12-26 17:35:56,737:INFO:Initializing predict_model()
+2024-12-26 17:35:56,737:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF25BE4D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:35:56,737:INFO:Set up data.
+2024-12-26 17:36:03,809:INFO:Initializing predict_model()
+2024-12-26 17:36:03,809:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF033F590>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:36:03,809:INFO:Set up data.
+2024-12-26 17:36:04,465:INFO:Initializing predict_model()
+2024-12-26 17:36:04,465:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF22FF810>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:36:04,465:INFO:Set up data.
+2024-12-26 17:36:11,917:INFO:Initializing predict_model()
+2024-12-26 17:36:11,917:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BE2294310>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:36:11,917:INFO:Set up data.
+2024-12-26 17:37:15,068:INFO:Initializing predict_model()
+2024-12-26 17:37:15,068:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF2239050>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:37:15,069:INFO:Set up data.
+2024-12-26 17:44:47,993:INFO:Initializing predict_model()
+2024-12-26 17:44:47,993:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF238D790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:44:47,993:INFO:Set up data.
+2024-12-26 17:45:11,658:INFO:Initializing predict_model()
+2024-12-26 17:45:11,658:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF215ED50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:45:11,658:INFO:Set up data.
+2024-12-26 17:45:14,988:INFO:Initializing predict_model()
+2024-12-26 17:45:14,988:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF2560350>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:45:14,988:INFO:Set up data.
+2024-12-26 17:45:23,529:INFO:Initializing predict_model()
+2024-12-26 17:45:23,529:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF2435F90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 17:45:23,529:INFO:Set up data.
+2024-12-26 18:13:30,694:INFO:Initializing predict_model()
+2024-12-26 18:13:30,695:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF2409F90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:13:30,695:INFO:Set up data.
+2024-12-26 18:17:38,207:INFO:Initializing predict_model()
+2024-12-26 18:17:38,207:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF22FE850>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:17:38,207:INFO:Set up data.
+2024-12-26 18:29:48,633:INFO:Initializing load_model()
+2024-12-26 18:29:48,633:INFO:load_model(model_name=welcome_survey_clustering_pipeline_v2, platform=None, authentication=None, verbose=True)
+2024-12-26 18:29:48,640:WARNING:C:\Users\LEGION\miniconda3\envs\ai_group_matcher\Lib\site-packages\pycaret\internal\pipeline.py:146: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.2', 'setuptools': '75.1.0', 'pycaret': '3.3.1', 'IPython': '8.31.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.13.0', 'category_encoders': '2.6.4', 'lightgbm': '4.4.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.9.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '6.1.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '24.2', 'setuptools': '75.1.0', 'pycaret': '3.3.1', 'IPython': '8.27.0', 'ipywidgets': '7.8.1', 'tqdm': '4.67.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.13.0', 'category_encoders': '2.6.4', 'lightgbm': '4.4.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.8.4', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.10', 'machine': 'AMD64'}}
+
+
+2024-12-26 18:29:48,669:INFO:Initializing predict_model()
+2024-12-26 18:29:48,669:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BE62665D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:29:48,669:INFO:Set up data.
+2024-12-26 18:29:48,718:INFO:Initializing predict_model()
+2024-12-26 18:29:48,718:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF2431190>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:29:48,718:INFO:Set up data.
+2024-12-26 18:29:52,340:INFO:Initializing predict_model()
+2024-12-26 18:29:52,341:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF24093D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:29:52,341:INFO:Set up data.
+2024-12-26 18:30:14,972:INFO:Initializing predict_model()
+2024-12-26 18:30:14,972:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF23C3490>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:30:14,972:INFO:Set up data.
+2024-12-26 18:32:18,898:INFO:Initializing predict_model()
+2024-12-26 18:32:18,898:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF021DA50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:32:18,898:INFO:Set up data.
+2024-12-26 18:32:23,166:INFO:Initializing predict_model()
+2024-12-26 18:32:23,166:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF24023D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:32:23,166:INFO:Set up data.
+2024-12-26 18:33:20,812:INFO:Initializing predict_model()
+2024-12-26 18:33:20,812:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BE2418C90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:33:20,812:INFO:Set up data.
+2024-12-26 18:33:25,947:INFO:Initializing predict_model()
+2024-12-26 18:33:25,947:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF2551190>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:33:25,947:INFO:Set up data.
+2024-12-26 18:34:10,077:INFO:Initializing predict_model()
+2024-12-26 18:34:10,077:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF26629D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:34:10,077:INFO:Set up data.
+2024-12-26 18:34:14,590:INFO:Initializing predict_model()
+2024-12-26 18:34:14,590:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF24C22D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:34:14,590:INFO:Set up data.
+2024-12-26 18:34:17,348:INFO:Initializing predict_model()
+2024-12-26 18:34:17,348:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF2408DD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:34:17,348:INFO:Set up data.
+2024-12-26 18:34:18,848:INFO:Initializing predict_model()
+2024-12-26 18:34:18,849:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BEEA6D0D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:34:18,849:INFO:Set up data.
+2024-12-26 18:34:30,130:INFO:Initializing predict_model()
+2024-12-26 18:34:30,130:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF228A010>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:34:30,130:INFO:Set up data.
+2024-12-26 18:36:09,113:INFO:Initializing predict_model()
+2024-12-26 18:36:09,114:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BEEBB7250>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:36:09,114:INFO:Set up data.
+2024-12-26 18:36:13,871:INFO:Initializing predict_model()
+2024-12-26 18:36:13,871:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF021F2D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:36:13,871:INFO:Set up data.
+2024-12-26 18:39:10,723:INFO:Initializing predict_model()
+2024-12-26 18:39:10,724:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF238F750>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:39:10,724:INFO:Set up data.
+2024-12-26 18:39:14,106:INFO:Initializing predict_model()
+2024-12-26 18:39:14,106:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BEEB3FB50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:39:14,106:INFO:Set up data.
+2024-12-26 18:39:47,433:INFO:Initializing predict_model()
+2024-12-26 18:39:47,433:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BE24DEA10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:39:47,433:INFO:Set up data.
+2024-12-26 18:40:07,012:INFO:Initializing predict_model()
+2024-12-26 18:40:07,012:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BEE040610>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:40:07,012:INFO:Set up data.
+2024-12-26 18:40:29,091:INFO:Initializing predict_model()
+2024-12-26 18:40:29,091:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF24BDE10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:40:29,092:INFO:Set up data.
+2024-12-26 18:40:30,675:INFO:Initializing predict_model()
+2024-12-26 18:40:30,675:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF2437D50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:40:30,675:INFO:Set up data.
+2024-12-26 18:40:35,420:INFO:Initializing predict_model()
+2024-12-26 18:40:35,420:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000027BF2501BD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2024-12-26 18:40:35,420:INFO:Set up data.
