@@ -1,6 +1,5 @@
-openai
-python-dotenv
-qdrant-client
+pandas
+plotly
 streamlit
-streamlit-audiorecorder
-pydub
+openai
+pycaret
